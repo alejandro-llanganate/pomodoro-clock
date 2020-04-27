@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny&display=swap');
+
+$color-fondo: rgb(250, 0, 104);
+$color-border: rgb(250, 0, 104);
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-fondo;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid $color-border;
+    box-shadow: 3px 3px 10px rgb(223, 109, 109);
+    align-items: center;
+    align-content: center;
+    transition: 1500ms ease-out;
+    &-time{
+        color: white;
+        font-size: 4em;
+        font-family: 'Coiny', cursive;
+        text-shadow: 4px 4px 6px rgba(112, 8, 65, 0.705);
+    }
+    &-controls{
+        button{
+            background-color: rgb(255, 255, 255);
+            color: red;
+            margin: 5px 8px;
+            padding: 9px 13px;
+            border-style: none;
+            text-shadow: 1px 1px 2px rgba(112, 8, 65, 0.705);
+            border: 1px solid rgb(197, 158, 178);
+            cursor: pointer;
+            border-radius: 10px;
+            outline: none;
+            
+            &:hover{
+                background-color: rgb(255, 196, 0);
+                color: white;  
+                border-color:  rgb(255, 196, 0);
+            }
+        }
+    }
+}

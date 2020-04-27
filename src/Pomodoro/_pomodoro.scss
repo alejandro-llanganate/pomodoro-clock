@@ -1,0 +1,32 @@
+// Colores:
+$color-fondo-container: transparent;
+$color-borde-fondo: hsl(350, 91%, 57%);
+
+//Medidas:
+$distancia-header: 2em;
+$ancho-container: 630px;
+$padding-container: 20px;
+$radio-borde-container: 20px;
+$borde: 0px;
+
+.pomodoro-container{
+    padding: $padding-container; 
+    width: $ancho-container;
+    max-width: 85%;
+    background-color: $color-fondo-container;
+    border: $borde solid $color-borde-fondo;
+    border-radius: $radio-borde-container;
+    margin: $distancia-header 0 $distancia-header 0;
+    align-items: center;
+    align-content: center;
+    &-controladores{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &-timer{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}

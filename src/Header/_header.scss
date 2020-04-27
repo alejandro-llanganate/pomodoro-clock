@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Economica&display=swap');
+
+$color-fondo: linear-gradient(40deg,#7D0052, #F7304E);
+$color-titulo: rgb(255, 255, 255);
+$color-subtitulo: rgba(255, 255, 255, 0.685);
+$color-text-shadow: rgba(71, 29, 61, 0.664);
+
+.app-header{
+    background: $color-fondo;
+    padding: 30px 16px;
+    text-align: center;
+    width: 100%;
+    h1{
+        color: $color-titulo;
+        font-family: 'Baloo Tamma 2', cursive;
+        text-shadow: 1px 4px $color-text-shadow;
+    }
+    p{
+        margin-top: -1.5em;
+        color: $color-subtitulo;
+        font-family: 'Economica', sans-serif;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: $color-titulo;
+    }
+}
